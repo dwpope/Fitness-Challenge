@@ -7,6 +7,7 @@
 // TEST
 
 import SwiftUI
+import Firebase
 
 struct Dashboard: View {
     
@@ -16,6 +17,7 @@ struct Dashboard: View {
     var time = ["30hr 20min", "28hr 10min", "20hr 30min", "15hr 40min", "14hr 20min", "12hr 10min", "10hr 5min", "5hr 4min"]
     
     var body: some View {
+        
         VStack{
             VStack (alignment: .center){
                 Text("🏆")
