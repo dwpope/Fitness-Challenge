@@ -32,15 +32,16 @@ struct DashboardWithFirebase: View {
                     .font(.body)
             }
             
-            //Couldn't figure out how to display in a ForEach loop like what I had done in the "Dashboard" file
             if #available(iOS 15.0, *) {
+                //Couldn't figure out how to display in a ForEach loop like what I had done in the "Dashboard" file
                 List (model.list.sorted {$0.position < $1.position}) { item in
                     HStack(spacing: 8){
                         Image(item.avatar)
                             .resizable()
                             .frame(width: 80, height: 80, alignment: .center)
-                        // How do I sort the list based of time spent exercising?
+                        // How do I sort the list based on time spent exercising?
                         // How do I stretch the List so it is full width?
+                        // Is there a better way to retrieve data than using Firebase?
                         Text(item.name)
                         Spacer()
                         Text(item.time)
