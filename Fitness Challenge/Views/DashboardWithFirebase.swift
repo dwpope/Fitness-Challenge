@@ -19,6 +19,7 @@ struct DashboardWithFirebase: View {
     var body: some View {
         
         VStack{
+            // Couldn't figure out how to get the Firebase data to populate the text - Could only call it in a List based off a tutorial
             VStack (alignment: .center){
                 Text("🏆")
                     .font(.system(size: 96))
