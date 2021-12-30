@@ -37,6 +37,14 @@
 		5A45058E277D138700508FB4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5A45058D277D138700508FB4 /* FirebaseStorage */; };
 		5A450590277D138700508FB4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5A45058F277D138700508FB4 /* FirebaseStorageCombine-Community */; };
 		5A450592277D138700508FB4 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5A450591277D138700508FB4 /* FirebaseStorageSwift-Beta */; };
+		5A45059A277D2CAC00508FB4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A450599277D2CAC00508FB4 /* WidgetKit.framework */; };
+		5A45059C277D2CAC00508FB4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A45059B277D2CAC00508FB4 /* SwiftUI.framework */; };
+		5A45059F277D2CAC00508FB4 /* Fitness_Challenge_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A45059E277D2CAC00508FB4 /* Fitness_Challenge_Widget.swift */; };
+		5A4505A2277D2CAE00508FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A4505A1277D2CAE00508FB4 /* Assets.xcassets */; };
+		5A4505A4277D2CAE00508FB4 /* Fitness_Challenge_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5A4505A0277D2CAC00508FB4 /* Fitness_Challenge_Widget.intentdefinition */; };
+		5A4505A5277D2CAE00508FB4 /* Fitness_Challenge_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5A4505A0277D2CAC00508FB4 /* Fitness_Challenge_Widget.intentdefinition */; };
+		5A4505A8277D2CAE00508FB4 /* Fitness Challenge WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5A450597277D2CAC00508FB4 /* Fitness Challenge WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5A4505AD277D2FB100508FB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF252382720E27B00D5C1CE /* Assets.xcassets */; };
 		5AF252352720E27900D5C1CE /* Fitness_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF252342720E27900D5C1CE /* Fitness_ChallengeApp.swift */; };
 		5AF252372720E27900D5C1CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF252362720E27900D5C1CE /* ContentView.swift */; };
 		5AF252392720E27B00D5C1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF252382720E27B00D5C1CE /* Assets.xcassets */; };
@@ -46,11 +54,42 @@
 		5AF252482720E3C300D5C1CE /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF252472720E3C300D5C1CE /* Dashboard.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5A4505A6277D2CAE00508FB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AF252292720E27900D5C1CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A450596277D2CAC00508FB4;
+			remoteInfo = "Fitness Challenge WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5A4505AC277D2CAE00508FB4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5A4505A8277D2CAE00508FB4 /* Fitness Challenge WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5A450544277A59AB00508FB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A450558277A8B8100508FB4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5A45055A277B427600508FB4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		5A45055C277B93E900508FB4 /* DashboardWithFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardWithFirebase.swift; sourceTree = "<group>"; };
+		5A450597277D2CAC00508FB4 /* Fitness Challenge WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Fitness Challenge WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A450599277D2CAC00508FB4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5A45059B277D2CAC00508FB4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5A45059E277D2CAC00508FB4 /* Fitness_Challenge_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_Challenge_Widget.swift; sourceTree = "<group>"; };
+		5A4505A0277D2CAC00508FB4 /* Fitness_Challenge_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Fitness_Challenge_Widget.intentdefinition; sourceTree = "<group>"; };
+		5A4505A1277D2CAE00508FB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A4505A3277D2CAE00508FB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AF252312720E27900D5C1CE /* Fitness Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF252342720E27900D5C1CE /* Fitness_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_ChallengeApp.swift; sourceTree = "<group>"; };
 		5AF252362720E27900D5C1CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +101,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5A450594277D2CAC00508FB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A45059C277D2CAC00508FB4 /* SwiftUI.framework in Frameworks */,
+				5A45059A277D2CAC00508FB4 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF2522E2720E27900D5C1CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,10 +172,32 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5A450598277D2CAC00508FB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A450599277D2CAC00508FB4 /* WidgetKit.framework */,
+				5A45059B277D2CAC00508FB4 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A45059D277D2CAC00508FB4 /* Fitness Challenge Widget */ = {
+			isa = PBXGroup;
+			children = (
+				5A45059E277D2CAC00508FB4 /* Fitness_Challenge_Widget.swift */,
+				5A4505A0277D2CAC00508FB4 /* Fitness_Challenge_Widget.intentdefinition */,
+				5A4505A1277D2CAE00508FB4 /* Assets.xcassets */,
+				5A4505A3277D2CAE00508FB4 /* Info.plist */,
+			);
+			path = "Fitness Challenge Widget";
+			sourceTree = "<group>";
+		};
 		5AF252282720E27900D5C1CE = {
 			isa = PBXGroup;
 			children = (
 				5AF252332720E27900D5C1CE /* Fitness Challenge */,
+				5A45059D277D2CAC00508FB4 /* Fitness Challenge Widget */,
+				5A450598277D2CAC00508FB4 /* Frameworks */,
 				5AF252322720E27900D5C1CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				5AF252312720E27900D5C1CE /* Fitness Challenge.app */,
+				5A450597277D2CAC00508FB4 /* Fitness Challenge WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -167,6 +238,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5A450596277D2CAC00508FB4 /* Fitness Challenge WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A4505A9277D2CAE00508FB4 /* Build configuration list for PBXNativeTarget "Fitness Challenge WidgetExtension" */;
+			buildPhases = (
+				5A450593277D2CAC00508FB4 /* Sources */,
+				5A450594277D2CAC00508FB4 /* Frameworks */,
+				5A450595277D2CAC00508FB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fitness Challenge WidgetExtension";
+			productName = "Fitness Challenge WidgetExtension";
+			productReference = 5A450597277D2CAC00508FB4 /* Fitness Challenge WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5AF252302720E27900D5C1CE /* Fitness Challenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AF252442720E27B00D5C1CE /* Build configuration list for PBXNativeTarget "Fitness Challenge" */;
@@ -174,10 +262,12 @@
 				5AF2522D2720E27900D5C1CE /* Sources */,
 				5AF2522E2720E27900D5C1CE /* Frameworks */,
 				5AF2522F2720E27900D5C1CE /* Resources */,
+				5A4505AC277D2CAE00508FB4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5A4505A7277D2CAE00508FB4 /* PBXTargetDependency */,
 			);
 			name = "Fitness Challenge";
 			packageProductDependencies = (
@@ -219,9 +309,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					5A450596277D2CAC00508FB4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					5AF252302720E27900D5C1CE = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -244,11 +337,21 @@
 			projectRoot = "";
 			targets = (
 				5AF252302720E27900D5C1CE /* Fitness Challenge */,
+				5A450596277D2CAC00508FB4 /* Fitness Challenge WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5A450595277D2CAC00508FB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4505AD277D2FB100508FB4 /* Assets.xcassets in Resources */,
+				5A4505A2277D2CAE00508FB4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF2522F2720E27900D5C1CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,12 +365,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5A450593277D2CAC00508FB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A45059F277D2CAC00508FB4 /* Fitness_Challenge_Widget.swift in Sources */,
+				5A4505A4277D2CAE00508FB4 /* Fitness_Challenge_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5AF2522D2720E27900D5C1CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5AF252412720E27B00D5C1CE /* Fitness_Challenge.xcdatamodeld in Sources */,
 				5AF2523E2720E27B00D5C1CE /* Persistence.swift in Sources */,
+				5A4505A5277D2CAE00508FB4 /* Fitness_Challenge_Widget.intentdefinition in Sources */,
 				5A450559277A8B8100508FB4 /* User.swift in Sources */,
 				5A45055D277B93E900508FB4 /* DashboardWithFirebase.swift in Sources */,
 				5AF252482720E3C300D5C1CE /* Dashboard.swift in Sources */,
@@ -279,7 +392,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5A4505A7277D2CAE00508FB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A450596277D2CAC00508FB4 /* Fitness Challenge WidgetExtension */;
+			targetProxy = 5A4505A6277D2CAE00508FB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5A4505AA277D2CAE00508FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHC8TY7TG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness Challenge Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fitness Challenge Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.davepope.Fitness-Challenge.Fitness-Challenge-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A4505AB277D2CAE00508FB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FHC8TY7TG6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Fitness Challenge Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Fitness Challenge Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.davepope.Fitness-Challenge.Fitness-Challenge-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5AF252422720E27B00D5C1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +576,7 @@
 		5AF252452720E27B00D5C1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +607,7 @@
 		5AF252462720E27B00D5C1CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +638,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5A4505A9277D2CAE00508FB4 /* Build configuration list for PBXNativeTarget "Fitness Challenge WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A4505AA277D2CAE00508FB4 /* Debug */,
+				5A4505AB277D2CAE00508FB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5AF2522C2720E27900D5C1CE /* Build configuration list for PBXProject "Fitness Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

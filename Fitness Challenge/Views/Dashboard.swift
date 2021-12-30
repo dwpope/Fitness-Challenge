@@ -12,7 +12,7 @@ import Firebase
 struct Dashboard: View {
     
     var athlete = ["Dave", "Chris", "Jena", "Jean", "Rachel", "Tom M", "Elle", "Tom P"]
-    var images = ["Dave", "Dad", "Jena", "Mum", "Rachel", "TomM", "Elle", "TomP"]
+    var images = ["Dave", "Chris", "Jena", "Jean", "Rachel", "TomM", "Elle", "TomP"]
     var medal = ["🥇", "🥈", "🥉", " ", " ", " ", " ", " "]
     var time = ["30hr 20min", "28hr 10min", "20hr 30min", "15hr 40min", "14hr 20min", "12hr 10min", "10hr 5min", "5hr 4min"]
     
