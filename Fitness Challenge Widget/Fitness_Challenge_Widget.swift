@@ -52,12 +52,11 @@ struct Fitness_Challenge_WidgetEntryView : View {
     var body: some View {
         VStack{
             VStack{
+                Text("7 days left")
+                    .font(.title)
+                    .fontWeight(.semibold)
                 Text("Most exercise in November")
                     .font(.title3)
-                    .fontWeight(.semibold)
-                    Text("    7 days left")
-                        .font(.body)
-                
             }
             Spacer()
             
@@ -83,10 +82,11 @@ struct Fitness_Challenge_WidgetEntryView : View {
                         }
                     }
                 }
-//                Spacer()
+                Spacer()
                 Rectangle()
                     .fill(Color.gray)
                     .frame(width: 0.5, height: 240)
+                Spacer()
                 VStack (alignment: .leading){
                     ForEach(4..<athlete.count) { index in
                         HStack{
