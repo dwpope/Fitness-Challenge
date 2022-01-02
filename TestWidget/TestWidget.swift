@@ -9,6 +9,7 @@ import WidgetKit
 import SwiftUI
 import Intents
 import Firebase
+import FirebaseFirestore
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -121,12 +122,12 @@ struct Fitness_Challenge_WidgetEntryView : View {
 @main
 struct TestWidget: Widget {
     
+    let kind: String = "TestWidget"
+    
     init() {
         FirebaseApp.configure()
     }
     
-    let kind: String = "TestWidget"
-
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             Fitness_Challenge_WidgetEntryView(entry: entry)

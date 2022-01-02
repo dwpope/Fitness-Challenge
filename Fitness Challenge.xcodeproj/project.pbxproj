@@ -37,6 +37,8 @@
 		5A45058E277D138700508FB4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5A45058D277D138700508FB4 /* FirebaseStorage */; };
 		5A450590277D138700508FB4 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5A45058F277D138700508FB4 /* FirebaseStorageCombine-Community */; };
 		5A450592277D138700508FB4 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 5A450591277D138700508FB4 /* FirebaseStorageSwift-Beta */; };
+		5A4BF2FD27826E4C00DB6A3E /* Fitness_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5AF2523F2720E27B00D5C1CE /* Fitness_Challenge.xcdatamodeld */; };
+		5A4BF2FE27826EC100DB6A3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A450544277A59AB00508FB4 /* GoogleService-Info.plist */; };
 		5AE1CCD3277F77A300EDA31D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A450599277D2CAC00508FB4 /* WidgetKit.framework */; };
 		5AE1CCD4277F77A300EDA31D /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A45059B277D2CAC00508FB4 /* SwiftUI.framework */; };
 		5AE1CCD7277F77A300EDA31D /* TestWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1CCD6277F77A300EDA31D /* TestWidget.swift */; };
@@ -357,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE1CCDA277F77A500EDA31D /* Assets.xcassets in Resources */,
+				5A4BF2FE27826EC100DB6A3E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AE1CCE5277F787800EDA31D /* User.swift in Sources */,
+				5A4BF2FD27826E4C00DB6A3E /* Fitness_Challenge.xcdatamodeld in Sources */,
 				5AE1CCDC277F77A500EDA31D /* TestWidget.intentdefinition in Sources */,
 				5AE1CCE4277F787000EDA31D /* UserViewModel.swift in Sources */,
 				5AE1CCD7277F77A300EDA31D /* TestWidget.swift in Sources */,
