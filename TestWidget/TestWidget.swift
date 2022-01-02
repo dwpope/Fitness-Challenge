@@ -1,13 +1,14 @@
 //
-//  Fitness_Challenge_Widget.swift
-//  Fitness Challenge Widget
+//  TestWidget.swift
+//  TestWidget
 //
-//  Created by Dave Pope on 29/12/2021.
+//  Created by Dave Pope on 31/12/2021.
 //
 
 import WidgetKit
 import SwiftUI
 import Intents
+import Firebase
 
 struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -43,11 +44,18 @@ struct SimpleEntry: TimelineEntry {
 struct Fitness_Challenge_WidgetEntryView : View {
     var entry: Provider.Entry
 
-    //Placeholder data
+    //Need two columns of data for the widget
     var athlete = ["Dave", "Chris", "Jena", "Jean", "Rachel", "Tom M", "Elle", "Tom P"]
     var images = ["Dave", "Chris", "Jena", "Jean", "Rachel", "TomM", "Elle", "TomP"]
     var medal = ["🥇", "🥈", "🥉", " ", " ", " ", " ", " "]
-    var time = ["30h 20m", "28h 10m", "20h 30m", "15h 40m", "14h 20m", "12h 10m", "10h 5m", "5h 4m"]
+    var time = ["33h 20min", "28h 10min", "20h 30min", "15h 40min", "14h 20min", "12h 10min", "10h 5min", "5h 4min"]
+    
+    @ObservedObject var model = UserViewModel()
+    
+    init(entry: Provider.Entry) {
+        self.entry = entry
+        model.getData()
+    }
     
     var body: some View {
         VStack{
@@ -63,20 +71,18 @@ struct Fitness_Challenge_WidgetEntryView : View {
             //Placeholder display
             HStack {
                 VStack (alignment: .leading) {
-                    ForEach(0..<athlete.count-4) { index in
+                    ForEach(model.list.sorted {$0.position < $1.position}) { user in
                         HStack{
                             ZStack{
-                                Image(self.images[index])
+                                Image(user.avatar)
                                     .resizable()
-                                    .frame(width: 56, height: 56, alignment: .center)
-                                Text(self.medal[index])
+                                    .frame(width: 52, height: 52, alignment: .center)
+                                Text(user.medal)
                                     .font(.title3)
                                     .fontWeight(.bold)
                                     .offset(x: -16, y: 16)
                             }
-//                            Text(self.athlete[index]).offset(x: -10)
-//                            Spacer()
-                            Text(self.time[index])
+                            Text(user.time)
                                 .offset(x: -8)
                                 .font(.body)
                         }
@@ -93,7 +99,7 @@ struct Fitness_Challenge_WidgetEntryView : View {
                             ZStack{
                                 Image(self.images[index])
                                     .resizable()
-                                    .frame(width: 56, height: 56, alignment: .center)
+                                    .frame(width: 52, height: 52, alignment: .center)
                                 Text(self.medal[index])
                                     .font(.title3)
                                     .fontWeight(.bold)
@@ -113,8 +119,8 @@ struct Fitness_Challenge_WidgetEntryView : View {
 }
 
 @main
-struct Fitness_Challenge_Widget: Widget {
-    let kind: String = "Fitness_Challenge_Widget"
+struct TestWidget: Widget {
+    let kind: String = "TestWidget"
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
@@ -125,9 +131,9 @@ struct Fitness_Challenge_Widget: Widget {
     }
 }
 
-struct Fitness_Challenge_Widget_Previews: PreviewProvider {
+struct TestWidget_Previews: PreviewProvider {
     static var previews: some View {
         Fitness_Challenge_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
-            .previewContext(WidgetPreviewContext(family: .systemLarge))
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }
