@@ -120,6 +120,11 @@ struct Fitness_Challenge_WidgetEntryView : View {
 
 @main
 struct TestWidget: Widget {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     let kind: String = "TestWidget"
 
     var body: some WidgetConfiguration {
